@@ -1,0 +1,17 @@
+.hero {
+    color: pink;
+}
+
+.hero img {
+    width: 100px;
+    height: 100px;
+}
+
+li {
+ list-style: none;
+}
+
+.selected {
+    background-color: rgb(233, 207, 238);
+    color: white;
+}

@@ -1,0 +1,15 @@
+<section>
+  <ul>
+    <li
+      class="hero"
+      *ngFor="let hero of heroes" 
+      (click)="onSelect(hero)"
+      [class.selected]="hero === selectedHero"
+    >
+      <img src="{{hero.img}}" alt="{{hero.name}}" />
+      <h1>{{hero.name}}</h1>
+      <p>Id:{{hero.id}}</p>
+    </li>
+  </ul>
+</section>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
